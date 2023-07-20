@@ -95,7 +95,7 @@ sudo mv kubectl /usr/local/bin
 ```
 
 
-
+## Instalando o Kind
 ```vim
 
 # For AMD64 / x86_64
