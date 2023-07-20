@@ -114,3 +114,19 @@ sudo mv ./kind /usr/local/bin/kind
 kind create cluster
 
 ```
+
+**Criando um cluster e inserindo um nome nele**
+
+```shell
+kind create cluster --name <nome-cluster>
+```
+
+**Deletando cluster**
+
+```shell
+kind delete cluster
+
+#ou
+
+kind delete cluster --name <nome-cluster>
+```
