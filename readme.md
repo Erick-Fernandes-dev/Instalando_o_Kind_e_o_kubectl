@@ -121,6 +121,11 @@ kind create cluster
 kind create cluster --name <nome-cluster>
 ```
 
+**Ver todos os clusters**
+```shell
+kind get clusters
+```
+
 **Deletando cluster**
 
 ```shell
@@ -129,4 +134,10 @@ kind delete cluster
 #ou
 
 kind delete cluster --name <nome-cluster>
+```
+
+**Rode um comando docker para ver os containers de cada cluster rodando**
+
+```shel
+docker container ls
 ```
