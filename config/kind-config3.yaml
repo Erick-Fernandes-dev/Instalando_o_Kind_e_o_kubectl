@@ -1,0 +1,19 @@
+# a cluster with 3 control-plane nodes and 3 workers
+kind: Cluster
+apiVersion: kind.x-k8s.io/v1alpha4
+nodes:
+- role: control-plane
+- role: control-plane
+- role: control-plane
+- role: worker
+  # Mapeiar a porta 8080 do host para a porta 30000 do container
+  extraPortMappings:
+  # porta do container que eu quero expor
+  - containerPort: 30000
+    # porta da minha máquina local
+    hostPort: 8080
+    # vai escutar qualquer ip da minha máquina local
+    listenAddress: "0.0.0.0" # Optional, defaults to "0.0.0.0"
+ #   protocol: tcp # Optional, defaults to tcp
+- role: worker
+- role: worker
