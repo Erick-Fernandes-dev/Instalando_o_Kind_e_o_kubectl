@@ -216,7 +216,7 @@ nodes:
 
 Implemente:
 
-```shell
+```yaml
 # Um cluster com 3 control-plane nodes e 3 workers
 kind: Cluster
 apiVersion: kind.x-k8s.io/v1alpha4
