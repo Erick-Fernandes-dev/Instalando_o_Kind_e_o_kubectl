@@ -302,3 +302,15 @@ nodes:
 ```shell
 kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/main/deploy/static/provider/kind/deploy.yaml
 ```
+
+## Vizualizando kubeconfigs
+
+```shell
+kubectl config view
+```
+
+## Alternando Clusters
+
+```shell
+kubectl config use-context <nome_cluster>
+```
